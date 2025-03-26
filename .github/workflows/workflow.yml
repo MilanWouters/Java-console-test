@@ -39,7 +39,7 @@ jobs:
           username: ${{ secrets.milanw7 }}
           password: ${{ secrets.Milanios123 }}
       - name: Push the image to Docker Hub
-        run: docker push ${{ secrets.milanw7 }}/java-console-test:latest
+        run: docker push ${{ secrets.milanw7 }}/java-console-test:latest .
 
   deliver-jar:
     runs-on: ubuntu-latest
